@@ -4,46 +4,50 @@ on:
   schedule:
     - cron: "*/15 * * * *"
     - cron: "*/5 6-20 10-22 9 *"
-  workflow_dispatch: {}  
+  workflow_dispatch: {}
 
 jobs:
   run:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: 'pip'
+          cache: pip
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Restore state.json
-        uses: actions/download-artifact@v4
+      - name: Restore state.json (from previous runs)
+        uses: dawidd6/action-download-artifact@v6
         with:
-          name: state-json
-          path: .
-        continue-on-error: true
+          workflow: check-elysee        
+          workflow_conclusion: success  
+          branch: ${{ github.ref_name }}# current branch
+          name: state-json              
+          path: .                       
+        continue-on-error: true         
+
+      - name: Ensure state.json exists
+        run: |
+          [ -f state.json ] || echo "{}" > state.json
+          ls -l state.json
 
       - name: Run watcher
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
-          # si state.json absent (premier run), on en crée un vide
-          [ -f state.json ] || echo "{}" > state.json
-          python main.py
+          python watch_elysee.py
 
       - name: Upload state.json
         uses: actions/upload-artifact@v4
         with:
           name: state-json
           path: state.json
-          retention-days: 30
+          retention-days: 7
