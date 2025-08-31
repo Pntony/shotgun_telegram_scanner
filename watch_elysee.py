@@ -14,7 +14,6 @@ URLS = [
     "https://www.elysee.fr/emmanuel-macron/2022/09/11/journees-du-patrimoine-2022",
 ]
 
-# --- MODIF: regex -> libellé humain ---
 KEYWORDS = {
     r"patrimoine\s*2025": "Patrimoine 2025",
     r"journées?\s+du\s+patrimoine": "Journées du Patrimoine",
@@ -139,7 +138,6 @@ def _send_telegram(text, token, chat_id, max_retries=5):
 
 
 def notify_telegram(msg, token=None, chat_id=None):
-    """Découpe le message si > 4096 et envoie les morceaux avec petite pause"""
     token = token or TG_BOT_TOKEN
     chat_id = chat_id or TG_CHAT_ID
 
@@ -162,9 +160,10 @@ def notify_telegram(msg, token=None, chat_id=None):
 
 def main():
     state = load_state()
-    changed_any = False
 
     urls_to_check = URLS + generate_candidate_urls(2025)
+
+    alerts = [] 
 
     for url in urls_to_check:
         try:
@@ -180,17 +179,21 @@ def main():
             trigger = (not prev_found and found) or (content_hash != prev_hash and found)
 
             if trigger:
-                keywords_str = ", ".join(found)
-                notify_telegram(f"🔔 Élysée : signaux repérés sur {url}\n👉 Mots-clés trouvés : {keywords_str}")
-                changed_any = True
+                alerts.append((url, found))
 
             state[url] = {"hash": content_hash, "found": found, "last_check": int(time.time())}
 
         except Exception as e:
             state[url] = {"error": str(e), "last_check": int(time.time())}
 
-    if changed_any:
-        notify_telegram("💡 Vérifie rapidement, il pourrait s’agir de la billetterie ou des infos JEP 2025.")
+    if alerts:
+        MAX_LINES = 20
+        lines = [f"🔔 {len(alerts)} page(s) avec signaux JEP 2025 :"]
+        for i, (u, labels) in enumerate(alerts[:MAX_LINES], 1):
+            lines.append(f"• {u}\n   → {', '.join(labels)}")
+        if len(alerts) > MAX_LINES:
+            lines.append(f"… et {len(alerts) - MAX_LINES} de plus.")
+        notify_telegram("\n".join(lines))
 
     save_state(state)
 
