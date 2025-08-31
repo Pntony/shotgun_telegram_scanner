@@ -30,7 +30,7 @@ jobs:
       - name: Restore state.json (from previous runs)
         uses: dawidd6/action-download-artifact@v6
         with:
-          workflow: .github/workflows/check.yml
+          workflow: .github/workflows/main.yml
           workflow_conclusion: success
           branch: ${{ github.ref_name }}
           name: state-json
