@@ -30,12 +30,12 @@ jobs:
       - name: Restore state.json (from previous runs)
         uses: dawidd6/action-download-artifact@v6
         with:
-          workflow: check-elysee        
-          workflow_conclusion: success  
+          workflow: .github/workflows/check.yml
+          workflow_conclusion: success
           branch: ${{ github.ref_name }}
-          name: state-json              
-          path: .                       
-        continue-on-error: true         
+          name: state-json
+          path: .
+        continue-on-error: true
 
       - name: Ensure state.json exists
         run: |
@@ -47,7 +47,7 @@ jobs:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
-          python main.py
+          python watch_elysee.py
 
       - name: Upload state.json
         uses: actions/upload-artifact@v4
