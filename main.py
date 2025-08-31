@@ -2,6 +2,8 @@ import os, re, hashlib, json, time, datetime
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+import json
+import time
 
 URLS = [
     "https://www.elysee.fr/actualites", 
@@ -90,16 +92,73 @@ def find_keywords(text):
 def sha256(text):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
-def notify_telegram(msg):
-    if not (TG_BOT_TOKEN and TG_CHAT_ID):
-        print("[WARN] Telegram non configuré, message aurait été :", msg)
-        return
-    url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TG_CHAT_ID, "text": msg, "disable_web_page_preview": True}
-    try:
-        requests.post(url, data=payload, timeout=15)
-    except Exception as e:
-        print("[ERR] Envoi Telegram:", e)
+
+def _send_telegram(text, token, chat_id, max_retries=5):
+    if not (token and chat_id):
+        print("[WARN] Telegram non configuré")
+        return False
+
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    payload = {
+        "chat_id": chat_id,
+        "text": text,
+        "disable_web_page_preview": True,
+    }
+
+    delay = 1.0
+    for attempt in range(1, max_retries + 1):
+        try:
+            resp = requests.post(url, data=payload, timeout=20)
+            if resp.status_code == 200:
+                return True
+            
+            # Flood control
+            if resp.status_code == 429:
+                try:
+                    data = resp.json()
+                    retry_after = data.get("parameters", {}).get("retry_after", 1)
+                except Exception:
+                    retry_after = 1
+                time.sleep(retry_after + 0.5)
+                continue
+
+            # backoff
+            if 500 <= resp.status_code < 600:
+                time.sleep(delay)
+                delay *= 2
+                continue
+
+            print(f"[ERR] Telegram {resp.status_code}: {resp.text[:200]}")
+            return False
+        except Exception as e:
+            # timeouts / réseau
+            print(f"[ERR] Envoi Telegram (tentative {attempt}): {e}")
+            time.sleep(delay)
+            delay *= 2
+    return False
+
+
+def notify_telegram(msg, token=None, chat_id=None):
+    """Découpe le message si > 4096 et envoie les morceaux avec petite pause"""
+    token = token or TG_BOT_TOKEN
+    chat_id = chat_id or TG_CHAT_ID
+
+    limit = 3500
+    chunks = []
+    while len(msg) > limit:
+        cut = msg.rfind("\n", 0, limit)
+        if cut == -1:
+            cut = limit
+        chunks.append(msg[:cut])
+        msg = msg[cut:].lstrip("\n")
+    chunks.append(msg)
+
+    ok = True
+    for i, part in enumerate(chunks):
+        ok = _send_telegram(part, token, chat_id) and ok
+        time.sleep(1.0)
+    return ok
+
 
 def main():
     state = load_state()
