@@ -30,6 +30,7 @@ jobs:
         with:
           name: state-json
           path: .
+        continue-on-error: true
 
       - name: Run watcher
         env:
