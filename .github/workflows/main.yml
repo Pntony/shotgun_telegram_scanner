@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install requests beautifulsoup4
-      - run: python watch_elysee.py
+      - run: python main.py
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
