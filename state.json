@@ -1,0 +1,495 @@
+{
+  "https://www.elysee.fr/actualites": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/actualites",
+    "last_check": 1756663153
+  },
+  "https://www.elysee.fr/toutes-les-actualites": {
+    "hash": "32fed2ce40bfbc4fbe1e8c1a5ce1e529d3e476d706d1eedd61758baf8f601f2a",
+    "found": [],
+    "last_check": 1756663153
+  },
+  "https://www.elysee.fr/emmanuel-macron/2024/09/16/les-journees-europeennes-du-patrimoine-2024-au-palais-de-lelysee": {
+    "hash": "0c405a3b52da6b0ce52c5c05e70e74f995310c85aaf8269a487e89baf935a5b2",
+    "found": [
+      "Journées Européennes du Patrimoine",
+      "Réserver",
+      "Inscriptions",
+      "Créneau",
+      "Visite",
+      "Entrée"
+    ],
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2023/09/07/journees-du-patrimoine-2023": {
+    "hash": "8d3b6170764a9d5951bb57ab06bd0ccf86679853f518293cbea15f2e483046d0",
+    "found": [
+      "Journées Européennes du Patrimoine",
+      "Réserver",
+      "Inscriptions",
+      "Créneau",
+      "Visite",
+      "Entrée"
+    ],
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2022/09/11/journees-du-patrimoine-2022": {
+    "hash": "ce1ad2ee3f985ec44e0408268021755a9218a22df8a060f780d23527a4ee44e8",
+    "found": [
+      "Journées Européennes du Patrimoine",
+      "Réserver",
+      "Inscriptions",
+      "Créneau",
+      "Visite",
+      "Entrée"
+    ],
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/01/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/01/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/01/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/01/journees-du-patrimoine-2025",
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/01/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/01/les-journees-du-patrimoine-2025",
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/01/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/01/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/01/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/01/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/02/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/02/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663154
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/02/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/02/journees-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/02/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/02/les-journees-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/02/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/02/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/02/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/02/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/03/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/03/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/03/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/03/journees-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/03/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/03/les-journees-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/03/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/03/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/03/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/03/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/04/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/04/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/04/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/04/journees-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/04/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/04/les-journees-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/04/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/04/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663155
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/04/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/04/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/05/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/05/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/05/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/05/journees-du-patrimoine-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/05/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/05/les-journees-du-patrimoine-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/05/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/05/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/05/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/05/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/06/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/06/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/06/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/06/journees-du-patrimoine-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/06/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/06/les-journees-du-patrimoine-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/06/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/06/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/06/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/06/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/07/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/07/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663156
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/07/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/07/journees-du-patrimoine-2025",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/07/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/07/les-journees-du-patrimoine-2025",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/07/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/07/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/07/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/07/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/08/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/08/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/08/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/08/journees-du-patrimoine-2025",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/08/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/08/les-journees-du-patrimoine-2025",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/08/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/08/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/08/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/08/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/09/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/09/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663157
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/09/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/09/journees-du-patrimoine-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/09/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/09/les-journees-du-patrimoine-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/09/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/09/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/09/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/09/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/10/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/10/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/10/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/10/journees-du-patrimoine-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/10/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/10/les-journees-du-patrimoine-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/10/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/10/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/10/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/10/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/11/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/11/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/11/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/11/journees-du-patrimoine-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/11/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/11/les-journees-du-patrimoine-2025",
+    "last_check": 1756663158
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/11/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/11/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/11/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/11/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/12/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/12/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/12/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/12/journees-du-patrimoine-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/12/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/12/les-journees-du-patrimoine-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/12/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/12/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/12/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/12/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/13/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/13/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/13/journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/13/journees-du-patrimoine-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/13/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/13/les-journees-du-patrimoine-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/13/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/13/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/13/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/13/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/14/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/14/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663159
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/14/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/14/journees-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/14/les-journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/14/les-journees-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/14/journees-europeennes-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/14/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/14/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/14/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/15/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/15/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/15/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/15/journees-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/15/les-journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/15/les-journees-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/15/journees-europeennes-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/15/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/15/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/15/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/16/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/16/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/16/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/16/journees-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/16/les-journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/16/les-journees-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/16/journees-europeennes-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/16/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663160
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/16/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/16/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/17/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/17/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/17/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/17/journees-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/17/les-journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/17/les-journees-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/17/journees-europeennes-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/17/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/17/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/17/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/18/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/18/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/18/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/18/journees-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/18/les-journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/18/les-journees-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/18/journees-europeennes-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/18/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/18/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/18/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/19/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/19/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/19/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/19/journees-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/19/les-journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/19/les-journees-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/19/journees-europeennes-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/19/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663161
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/19/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/19/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/20/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/20/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/20/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/20/journees-du-patrimoine-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/20/les-journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/20/les-journees-du-patrimoine-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/20/journees-europeennes-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/20/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/20/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/20/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/21/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/21/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/21/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/21/journees-du-patrimoine-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/21/les-journees-du-patrimoine-2025": {
+    "error": "404 Client Error: Not Found for url: https://www.elysee.fr/emmanuel-macron/2025/09/21/les-journees-du-patrimoine-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/21/journees-europeennes-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/21/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/21/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/21/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663162
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/22/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/22/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663163
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/22/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/22/journees-du-patrimoine-2025",
+    "last_check": 1756663163
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/22/les-journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/22/les-journees-du-patrimoine-2025",
+    "last_check": 1756663163
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/22/journees-europeennes-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/22/journees-europeennes-du-patrimoine-2025",
+    "last_check": 1756663163
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/22/journees-du-patrimoine-au-palais-de-lelysee-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/22/journees-du-patrimoine-au-palais-de-lelysee-2025",
+    "last_check": 1756663163
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee",
+    "last_check": 1756663163
+  },
+  "https://www.elysee.fr/emmanuel-macron/2025/09/journees-du-patrimoine-2025": {
+    "error": "429 Client Error: Too Many Requests for url: https://www.elysee.fr/emmanuel-macron/2025/09/journees-du-patrimoine-2025",
+    "last_check": 1756663163
+  }
+}
