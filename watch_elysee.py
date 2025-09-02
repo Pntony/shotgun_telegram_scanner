@@ -62,9 +62,9 @@ SESSION.mount("http://", HTTPAdapter(max_retries=retry_cfg))
 URLS = [
     "https://www.elysee.fr/actualites",
     "https://www.elysee.fr/toutes-les-actualites",
-    "https://www.elysee.fr/emmanuel-macron/2024/09/16/les-journees-europeennes-du-patrimoine-2024-au-palais-de-lelysee",
-    "https://www.elysee.fr/emmanuel-macron/2023/09/07/journees-du-patrimoine-2023",
-    "https://www.elysee.fr/emmanuel-macron/2022/09/11/journees-du-patrimoine-2022",
+    # "https://www.elysee.fr/emmanuel-macron/2024/09/16/les-journees-europeennes-du-patrimoine-2024-au-palais-de-lelysee",
+    # "https://www.elysee.fr/emmanuel-macron/2023/09/07/journees-du-patrimoine-2023",
+    # "https://www.elysee.fr/emmanuel-macron/2022/09/11/journees-du-patrimoine-2022",
 ]
 
 KEYWORDS = {
