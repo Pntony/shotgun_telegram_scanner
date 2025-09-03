@@ -13,6 +13,10 @@ from urllib3.util.retry import Retry
 LOG_LEVEL = "DEBUG"
 LOG_JSON = "0"
 
+TARGET_URL = "https://www.elysee.fr/emmanuel-macron/2025/09/03/les-journees-europeennes-du-patrimoine-2025-au-palais-de-lelysee"
+SENTINEL_PHRASE = "la plateforme sera disponible prochainement."
+
+
 class _KVFormatter(logging.Formatter):
     def format(self, record):
         base = {
@@ -277,8 +281,11 @@ def main():
     log(logging.INFO, "run_start", log_level=LOG_LEVEL, json=LOG_JSON)
     state = load_state()
 
-    urls_to_check = URLS + generate_candidate_urls(2025)
-    log(logging.INFO, "planning_urls", total=len(urls_to_check), seeds=len(URLS))
+    # If you still want the old broad scan, combine lists here:
+    # urls_to_check = [TARGET_URL] + URLS + generate_candidate_urls(2025)
+    urls_to_check = [TARGET_URL]
+
+    log(logging.INFO, "planning_urls", total=len(urls_to_check), seeds=len(urls_to_check))
 
     alerts = []
     scanned = 0
@@ -288,6 +295,7 @@ def main():
         try:
             html = fetch(url)
             txt = textify(html)
+
             found = find_keywords(txt)
             content_hash = sha256(txt)
 
@@ -295,7 +303,20 @@ def main():
             prev_hash = prev.get("hash")
             prev_found = prev.get("found", [])
 
-            trigger = (not prev_found and bool(found)) or ((content_hash != prev_hash) and bool(found))
+            # --- SENTINEL: presence on this run
+            sentinel_present = SENTINEL_PHRASE in txt
+
+            # --- SENTINEL: presence on previous run (may be None first time)
+            prev_sentinel_present = prev.get("sentinel_present")
+
+            # Default trigger logic (kept for safety / keywords)
+            trigger_keywords = (not prev_found and bool(found)) or ((content_hash != prev_hash) and bool(found))
+
+            # --- SENTINEL: fire ONLY when the phrase disappears (present -> absent)
+            trigger_sentinel = (prev_sentinel_present is True and sentinel_present is False)
+
+            # You can OR both if you still want keyword-based triggers:
+            trigger = trigger_sentinel or trigger_keywords
 
             # granular logging per URL
             log(logging.DEBUG, "scan_result",
@@ -306,16 +327,22 @@ def main():
                 prev_hash=prev_hash,
                 prev_found=prev_found,
                 hash_changed=(content_hash != prev_hash),
+                sentinel_present=sentinel_present,
+                prev_sentinel_present=prev_sentinel_present,
+                trigger_keywords=trigger_keywords,
+                trigger_sentinel=trigger_sentinel,
                 trigger=trigger)
 
             if trigger:
-                alerts.append((url, found))
-                log(logging.INFO, "trigger_alert", url=url, labels=found)
+                reason = "sentinel_removed" if trigger_sentinel else "keywords_change"
+                alerts.append((url, found, reason, sentinel_present, prev_sentinel_present))
+                log(logging.INFO, "trigger_alert", url=url, labels=found, reason=reason)
 
             state[url] = {
                 "hash": content_hash,
                 "found": found,
-                "last_check": int(time.time())
+                "last_check": int(time.time()),
+                "sentinel_present": sentinel_present,   # --- SENTINEL: store status
             }
 
         except Exception as e:
@@ -324,9 +351,18 @@ def main():
 
     if alerts:
         MAX_LINES = 20
-        lines = [f"🔔 {len(alerts)} page(s) avec signaux JEP 2025 :"]
-        for i, (u, labels) in enumerate(alerts[:MAX_LINES], 1):
-            lines.append(f"• {u}\n   → {', '.join(labels)}")
+        lines = [f"🔔 {len(alerts)} alerte(s) Élysée — JEP 2025:"]
+        for i, (u, labels, reason, now_present, was_present) in enumerate(alerts[:MAX_LINES], 1):
+            if reason == "sentinel_removed":
+                lines.append(
+                    "• ⚠️ La phrase de garde a DISPARU → possible ouverture de la plateforme !\n"
+                    f"  {u}\n"
+                    "  (ancienne présence: oui, présence actuelle: non)"
+                )
+            else:
+                lines.append(
+                    f"• Changement détecté avec mots-clés: {', '.join(labels) or '—'}\n  {u}"
+                )
         if len(alerts) > MAX_LINES:
             lines.append(f"… et {len(alerts) - MAX_LINES} de plus.")
 
@@ -337,6 +373,71 @@ def main():
 
     save_state(state)
     log(logging.INFO, "run_end", alerts=len(alerts), scanned=scanned)
+
+# def main():
+#     log(logging.INFO, "run_start", log_level=LOG_LEVEL, json=LOG_JSON)
+#     state = load_state()
+
+#     urls_to_check = URLS + generate_candidate_urls(2025)
+#     log(logging.INFO, "planning_urls", total=len(urls_to_check), seeds=len(URLS))
+
+#     alerts = []
+#     scanned = 0
+
+#     for url in urls_to_check:
+#         scanned += 1
+#         try:
+#             html = fetch(url)
+#             txt = textify(html)
+#             found = find_keywords(txt)
+#             content_hash = sha256(txt)
+
+#             prev = state.get(url, {})
+#             prev_hash = prev.get("hash")
+#             prev_found = prev.get("found", [])
+
+#             trigger = (not prev_found and bool(found)) or ((content_hash != prev_hash) and bool(found))
+
+#             # granular logging per URL
+#             log(logging.DEBUG, "scan_result",
+#                 url=url,
+#                 found_labels=found,
+#                 n_labels=len(found),
+#                 new_hash=content_hash,
+#                 prev_hash=prev_hash,
+#                 prev_found=prev_found,
+#                 hash_changed=(content_hash != prev_hash),
+#                 trigger=trigger)
+
+#             if trigger:
+#                 alerts.append((url, found))
+#                 log(logging.INFO, "trigger_alert", url=url, labels=found)
+
+#             state[url] = {
+#                 "hash": content_hash,
+#                 "found": found,
+#                 "last_check": int(time.time())
+#             }
+
+#         except Exception as e:
+#             state[url] = {"error": str(e), "last_check": int(time.time())}
+#             log(logging.ERROR, "scan_error", url=url, error=str(e))
+
+#     if alerts:
+#         MAX_LINES = 20
+#         lines = [f"🔔 {len(alerts)} page(s) avec signaux JEP 2025 :"]
+#         for i, (u, labels) in enumerate(alerts[:MAX_LINES], 1):
+#             lines.append(f"• {u}\n   → {', '.join(labels)}")
+#         if len(alerts) > MAX_LINES:
+#             lines.append(f"… et {len(alerts) - MAX_LINES} de plus.")
+
+#         log(logging.INFO, "sending_alerts", count=len(alerts), capped=min(len(alerts), MAX_LINES))
+#         notify_telegram("\n".join(lines))
+#     else:
+#         log(logging.INFO, "no_alerts_no_send", scanned=scanned)
+
+#     save_state(state)
+#     log(logging.INFO, "run_end", alerts=len(alerts), scanned=scanned)
 
 if __name__ == "__main__":
     main()
