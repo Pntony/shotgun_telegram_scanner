@@ -1,9 +1,8 @@
-name: check-elysee
+name: check-housing
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
-    - cron: "*/5 6-20 10-22 9 *"
+    - cron: "*/30 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -27,31 +26,31 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Restore state.json (from previous runs)
+      - name: Restore housing_db.json (from previous runs)
         uses: dawidd6/action-download-artifact@v6
         with:
           workflow: .github/workflows/main.yml
           workflow_conclusion: success
           branch: ${{ github.ref_name }}
-          name: state-json
+          name: housing-db
           path: .
         continue-on-error: true
 
-      - name: Ensure state.json exists
+      - name: Ensure housing_db.json exists
         run: |
-          [ -f state.json ] || echo "{}" > state.json
-          ls -l state.json
+          [ -f housing_db.json ] || echo "{}" > housing_db.json
+          ls -l housing_db.json
 
-      - name: Run watcher
+      - name: Run housing watcher
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
-          python watch_elysee.py
+          python watch_housing.py
 
-      - name: Upload state.json
+      - name: Upload housing_db.json
         uses: actions/upload-artifact@v4
         with:
-          name: state-json
-          path: state.json
+          name: housing-db
+          path: housing_db.json
           retention-days: 7
