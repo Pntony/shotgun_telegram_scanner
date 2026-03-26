@@ -2,8 +2,8 @@ name: check-housing
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
-  workflow_dispatch: {}
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: read
