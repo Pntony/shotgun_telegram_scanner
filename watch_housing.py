@@ -832,12 +832,12 @@ def main():
 
     if send_daily_recap and matching_listings:
         log(logging.INFO, "sending_daily_recap", count=len(matching_listings), local_date=now_local.date().isoformat())
-        recap_ok = notify_telegram(build_daily_recap_message(matching_listings, now_local))
-        if recap_ok:
-            database["last_daily_recap_date"] = now_local.date().isoformat()
-            save_database(database)
+        # recap_ok = notify_telegram(build_daily_recap_message(matching_listings, now_local))
+        # if recap_ok:
+        database["last_daily_recap_date"] = now_local.date().isoformat()
+        save_database(database)
     elif send_daily_recap:
-        log(logging.INFO, "skipping_daily_recap_no_matches", local_date=now_local.date().isoformat())
+        # log(logging.INFO, "skipping_daily_recap_no_matches", local_date=now_local.date().isoformat())
         database["last_daily_recap_date"] = now_local.date().isoformat()
         save_database(database)
 
