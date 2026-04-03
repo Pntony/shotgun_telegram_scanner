@@ -1,13 +1,13 @@
 name: check-housing
 
-on:
-  schedule:
-    - cron: "7,37 * * * *"
-  workflow_dispatch:
+# on:
+# schedule:
+ #   - cron: "7,37 * * * *"
+  #workflow_dispatch:
 
-permissions:
-  contents: read
-  actions: read
+#permissions:
+#  contents: read
+ # actions: read
 
 jobs:
   run:
